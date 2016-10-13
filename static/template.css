@@ -139,7 +139,7 @@ form{
 .play{
   width: 100px;
   height: 100px;
-  margin: 0 auto;
+  margin: 40px auto;
   background: rgba(255,255,255,0.1) url(../media/icons/132.png) no-repeat center center;
   background-size: 70%;
   border-radius: 50%;
@@ -188,7 +188,8 @@ label{
   z-index: 2;
   border-bottom: 1px solid #f2f2f2;
   text-align: center;
-  padding-left: 49px;
+  padding-left: 140px;
+  padding-right: 140px;
 }
 .menu-top img{
   height: 40px;
@@ -360,6 +361,7 @@ article{
   margin: 10px;
   padding: 10px;
   opacity: 0.8;
+  vertical-align: top;
 }
 article:hover{
   opacity: 1;
@@ -504,4 +506,112 @@ display: table-cell;
   height: 70px;
   position: absolute;
   margin-top: -70px;
+}
+
+@media screen and (max-width:1000px){
+.menu-top{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  z-index: 2;
+  border-bottom: 0px solid #f2f2f2;
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.menu-top img{
+  height: 100px;
+  display: block;
+  vertical-align: top;
+  position: relative;
+  margin: 10px auto;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 198, 0, 0.8);
+}
+.menu-top ul{
+  display: block;
+  vertical-align: top;
+  height: auto;
+}
+.menu-top li{
+  display: block;
+  color: #fff;
+  /*! margin: 3px; */
+  height: auto;
+  /*! margin: 0; */
+}
+.menu-top li a{
+  display: block;
+  padding: 16px;
+  color: #000;
+  background: rgba(0, 0, 0, 0.1);
+  font-family: oswald;
+  margin: 5px;
+  /*! border-radius: 30px; */
+  height: auto;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.tlf{
+  position: relative;
+  top: 0px;
+  margin: 0 auto;
+  right: 0px;
+  padding: 7px 10px;
+  background: green url(../media/04.png) no-repeat left 5px center;
+  background-size: 30px;
+  border-radius: 5px;
+  padding-left: 40px;
+}
+  
+  .universe{
+  min-height: 100%;
+  background: url(../media/back01.jpg);
+  /*! padding-left: 70px; */
+  padding-top: 0px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+ .fullVideo{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+  .sun{
+  background: rgba(0, 0, 0, 0.59);
+  height: auto;
+  min-height: 100%;
+  text-align: center;
+  /*! padding: 30px; */
+  /*! width: 1000px; */
+  /*! margin: 0 auto; */
+  position: relative;
+  /*! padding-left: 300px; */
+}
+  .planet{
+  background: violet;
+  height: auto;
+  width: 100%;
+  display: table;
+}
+.earth{
+  display: table;
+  vertical-align: top;
+  min-height: 100%;
+  width: 100%;
+  background: #3F51B5;
+  /*! padding: 40px; */
+}
+.ocean{
+  display: table;
+  min-height: 100%;
+  width: 100%;
+  text-align: center;
+  background: #b5babf;
+}
 }
